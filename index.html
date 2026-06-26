@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="J & F Panadería Artesanal en Mendoza Capital. Pan a leña, facturas recién horneadas, tortas por encargo. Calle Las Heras 742 · Desde 1998.">
+  <meta name="theme-color" content="#1A1008">
+  <meta property="og:title" content="J & F · El pan de toda la vida.">
+  <meta property="og:description" content="Panadería artesanal en Mendoza Capital desde 1998. Pan a leña, facturas y tortas por encargo.">
+  <meta property="og:type" content="website">
+  <title>J & F · El pan de toda la vida · Mendoza</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=20260626">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     GRADIENTE DE FONDO GLOBAL
+     ═══════════════════════════════════════════════════════ -->
+<div id="bg-gradient" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CURSOR PERSONALIZADO
+     ═══════════════════════════════════════════════════════ -->
+<div id="cursor" aria-hidden="true">
+  <div class="cursor-ring"></div>
+  <div class="cursor-dot"></div>
+  <span class="cursor-label"></span>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     SPLASH SCREEN
+     ═══════════════════════════════════════════════════════ -->
+<div id="splash" role="status" aria-label="Cargando J & F Panadería">
+  <div class="splash-letters" aria-hidden="true">
+    <span class="splash-letter">J</span>
+    <span class="splash-letter">&</span>
+    <span class="splash-letter">F</span>
+    <span class="splash-letter">.</span>
+  </div>
+  <div class="splash-bar-wrap" aria-hidden="true">
+    <div class="splash-bar"></div>
+  </div>
+  <p class="splash-tagline" aria-hidden="true">Horneando · Est. 1998 · Mendoza</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     MARCA LATERAL FIJA
+     ═══════════════════════════════════════════════════════ -->
+<aside id="side-brand" aria-hidden="true">
+  <div class="side-dot"></div>
+  <span class="side-text">ABIERTO · LUN → SÁB · 07:00 → 21:00</span>
+</aside>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVEGACIÓN
+     ═══════════════════════════════════════════════════════ -->
+<nav id="nav" role="navigation" aria-label="Navegación principal">
+  <a href="#hero" class="nav-logo" aria-label="J & F Panadería inicio">J <span>&</span> F</a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#about"              class="nav-link"><span class="nav-link-num">01</span>La Panadería</a></li>
+    <li><a href="#productos"          class="nav-link"><span class="nav-link-num">02</span>Productos</a></li>
+    <li><a href="#pedidos-especiales" class="nav-link"><span class="nav-link-num">03</span>Pedidos</a></li>
+    <li><a href="#galeria"            class="nav-link"><span class="nav-link-num">04</span>Galería</a></li>
+    <li><a href="#pedido"             class="nav-link"><span class="nav-link-num">05</span>Hacé tu pedido</a></li>
+  </ul>
+
+  <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20J%20%26%20F%20%F0%9F%A5%90"
+     target="_blank" rel="noopener" class="nav-cta" aria-label="Pedir por WhatsApp">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L.057 23.998l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.358-.213-3.742.981 1-3.645-.233-.373A9.818 9.818 0 1112 21.818z"/>
+    </svg>
+    Pedir
+  </a>
+
+  <button id="nav-burger" class="nav-burger" aria-label="Menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile overlay -->
+<div id="nav-mobile-overlay" class="nav-mobile-overlay" role="dialog" aria-modal="true" aria-label="Menú móvil">
+  <a href="#about"              class="nav-link"><span class="nav-link-num">01</span>La Panadería</a>
+  <a href="#productos"          class="nav-link"><span class="nav-link-num">02</span>Productos</a>
+  <a href="#pedidos-especiales" class="nav-link"><span class="nav-link-num">03</span>Pedidos</a>
+  <a href="#galeria"            class="nav-link"><span class="nav-link-num">04</span>Galería</a>
+  <a href="#pedido"             class="nav-link"><span class="nav-link-num">05</span>Hacé tu pedido</a>
+  <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20J%20%26%20F%20%F0%9F%A5%90"
+     target="_blank" rel="noopener" class="nav-cta">
+    <span class="wsp-green">●</span> Pedir por WhatsApp
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTENIDO PRINCIPAL
+     ═══════════════════════════════════════════════════════ -->
+<main id="main">
+
+  <!-- ───────────────────────────────────────────────────
+       HERO
+       ─────────────────────────────────────────────────── -->
+  <section id="hero" aria-label="Presentación">
+    <div class="hero-bg" aria-hidden="true">
+      <img class="hero-bg-img"
+           src="assets/img/hero-bg.jpg"
+           alt=""
+           loading="eager"
+           onerror="this.style.display='none'">
+      <div class="hero-veil"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-kicker reveal" data-dir="up">
+        Panadería artesanal · Desde 1998 / Mendoza Capital
+      </p>
+      <h1 class="hero-title reveal" data-dir="up" data-delay="0.1">
+        J &amp; /<span class="hero-title-line2">F<span class="hero-title-dot">.</span></span>
+      </h1>
+      <p class="hero-tagline reveal" data-dir="up" data-delay="0.2">
+        El pan de toda la vida.
+      </p>
+      <div class="hero-ctas reveal" data-dir="up" data-delay="0.3">
+        <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20J%20%26%20F%20%F0%9F%A5%90"
+           target="_blank" rel="noopener" class="cta-primary" aria-label="Pedir por WhatsApp">
+          Pedir por WhatsApp
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#productos" class="cta-secondary">Ver la carta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────
+       MARQUEE TICKER
+       ─────────────────────────────────────────────────── -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Pan a leña todos los días</span>
+      <span class="marquee-item">Facturas recién horneadas</span>
+      <span class="marquee-item">Calle Las Heras 742</span>
+      <span class="marquee-item">Mendoza Capital</span>
+      <span class="marquee-item">Tortas por encargo</span>
+      <span class="marquee-item">El pan de toda la vida</span>
+      <span class="marquee-item">Est. 1998</span>
+      <span class="marquee-item">Pan a leña todos los días</span>
+      <span class="marquee-item">Facturas recién horneadas</span>
+      <span class="marquee-item">Calle Las Heras 742</span>
+      <span class="marquee-item">Mendoza Capital</span>
+      <span class="marquee-item">Tortas por encargo</span>
+      <span class="marquee-item">El pan de toda la vida</span>
+      <span class="marquee-item">Est. 1998</span>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────────────────────────────
+       SECCIÓN 01 — LA PANADERÍA
+       ─────────────────────────────────────────────────── -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <span class="section-num" aria-hidden="true">01</span>
+
+    <div class="about-grid">
+      <!-- Collage de fotos -->
+      <div class="about-photos" aria-hidden="true">
+        <div class="about-photo">
+          <img src="assets/img/about-01.jpg" alt="Horno a leña de J & F" loading="lazy" onerror="this.parentElement.querySelector('.ph').style.display='flex'; this.style.display='none'">
+          <div class="ph" style="display:none">Horno a leña</div>
+          <div class="about-tape">EST. 1998 · MZA</div>
+        </div>
+        <div class="about-photo">
+          <img src="assets/img/about-02.jpg" alt="Frente de la panadería" loading="lazy" onerror="this.parentElement.querySelector('.ph').style.display='flex'; this.style.display='none'">
+          <div class="ph" style="display:none">Frente local</div>
+        </div>
+        <div class="about-photo">
+          <img src="assets/img/about-03.jpg" alt="Panes variados en mesada" loading="lazy" onerror="this.parentElement.querySelector('.ph').style.display='flex'; this.style.display='none'">
+          <div class="ph" style="display:none">Panes variados</div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="about-text">
+        <div class="section-label">
+          <span>La Panadería</span>
+        </div>
+        <div class="about-eyebrow">
+          <span class="about-year-badge">EST · 1998 · MZA</span>
+        </div>
+        <h2 id="about-title" class="about-title reveal">
+          Un horno que no se apaga<br>
+          <em>desde el noventa y ocho.</em>
+        </h2>
+        <blockquote class="about-quote reveal" data-delay="0.1">
+          "El lugar de toda la vida. Pan recién horneado,<br>
+          facturas calentitas, la torta de cumpleaños de siempre."
+        </blockquote>
+        <p class="about-lead reveal" data-delay="0.15">
+          J&nbsp;&amp;&nbsp;F nació en 1998 en Las Heras 742 con un horno a leña y la receta
+          de siempre. Más de veinticinco años horneando cada mañana, sin apuro
+          y sin atajos.
+        </p>
+        <p class="about-lead reveal" data-delay="0.2">
+          Los panificados se hacen a diario con masa madre, harina y tiempo.
+          Las facturas salen del horno dos veces por día. Las tortas se encargan
+          con un día de aviso y se retiran listas.
+        </p>
+
+        <dl class="about-defs">
+          <div class="about-def reveal" data-delay="0.25">
+            <dt>Especialidad</dt>
+            <dd>Pan a leña y facturas artesanales</dd>
+          </div>
+          <div class="about-def reveal" data-delay="0.3">
+            <dt>Apertura</dt>
+            <dd>Lunes a sábado</dd>
+          </div>
+          <div class="about-def reveal" data-delay="0.35">
+            <dt>Horario</dt>
+            <dd>07:00 → 21:00</dd>
+          </div>
+          <div class="about-def reveal" data-delay="0.4">
+            <dt>Domingos</dt>
+            <dd>08:00 → 13:00</dd>
+          </div>
+          <div class="about-def reveal" data-delay="0.45">
+            <dt>Dirección</dt>
+            <dd>Calle Las Heras 742, Mendoza Capital</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────
+       SECCIÓN 02 — PRODUCTOS (Horizontal Scroll)
+       ─────────────────────────────────────────────────── -->
+  <section id="productos" aria-labelledby="productos-title">
+    <div class="products-header">
+      <div class="products-header-left">
+        <div class="section-label" style="margin-bottom:0; color: rgba(250,243,231,0.5);">
+          <span>La Carta</span>
+        </div>
+        <h2 id="productos-title" class="products-title">Nuestros productos</h2>
+      </div>
+      <div class="products-progress" aria-live="polite" aria-label="Producto actual">
+        <span class="progress-current">01</span> / 10
+      </div>
+    </div>
+
+    <div class="products-track-wrap" role="region" aria-label="Carrusel de productos. Deslizá o usá el scroll para navegar.">
+      <div class="products-track" id="products-track">
+
+        <!-- ─── CARD 01: PAN CASERO ─── -->
+        <article class="product-card" aria-label="Pan Casero">
+          <div class="product-card-header">
+            <span class="product-serie clasico">Clásico</span>
+            <span class="product-num">01 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Fill shape -->
+              <polygon class="svg-fill" points="140,25 200,55 232,108 200,165 140,192 80,165 48,108 80,55" fill="#C68642" fill-opacity="0.18" stroke="none"/>
+              <!-- Outer crust outline -->
+              <polygon class="svg-animate" points="140,25 200,55 232,108 200,165 140,192 80,165 48,108 80,55" stroke="#C1502E" stroke-width="2.5"/>
+              <!-- Inner crust -->
+              <polygon class="svg-animate" points="140,38 192,62 220,108 192,156 140,178 88,156 60,108 88,62" stroke="#C68642" stroke-width="1.2" stroke-dasharray="4 4"/>
+              <!-- Score mark horizontal ear -->
+              <path class="svg-animate" d="M82,82 Q112,58 148,78" stroke="#C1502E" stroke-width="2"/>
+              <!-- Score cross vertical -->
+              <line class="svg-animate" x1="136" y1="48" x2="144" y2="178" stroke="#8B4B25" stroke-width="1.4" stroke-dasharray="5 3"/>
+              <!-- Score cross horizontal -->
+              <path class="svg-animate" d="M68,105 Q140,98 214,112" stroke="#8B4B25" stroke-width="1.4" stroke-dasharray="5 3"/>
+              <!-- Texture dots -->
+              <circle class="svg-animate" cx="108" cy="120" r="3.5" stroke="#C1502E" stroke-width="1.2"/>
+              <circle class="svg-animate" cx="140" cy="108" r="3" stroke="#C1502E" stroke-width="1.2"/>
+              <circle class="svg-animate" cx="168" cy="122" r="3.5" stroke="#C1502E" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Pan Casero</h3>
+            <p class="product-subtitle">El de toda la vida</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Harina</li>
+              <li class="product-ingredient">Masa madre</li>
+              <li class="product-ingredient">Sal de mar</li>
+            </ul>
+            <p class="product-desc">Corteza crocante y migajón tibio. El pan que abrió este local en el noventa y ocho y nunca cambió de receta.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 02: FACTURA DE MANTECA ─── -->
+        <article class="product-card" aria-label="Factura de Manteca">
+          <div class="product-card-header">
+            <span class="product-serie clasico">Clásico</span>
+            <span class="product-num">02 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Fill crescent -->
+              <path class="svg-fill" d="M200,55 C240,90 245,145 215,175 C180,210 120,210 90,185 C60,160 62,115 80,88 C100,58 140,45 165,52 C155,70 148,100 158,128 C168,155 188,168 205,162 C228,153 238,120 230,95 C222,72 207,60 200,55Z" fill="#F2C879" fill-opacity="0.2" stroke="none"/>
+              <!-- Outer crescent outline -->
+              <path class="svg-animate" d="M200,55 C240,90 245,145 215,175 C180,210 120,210 90,185 C60,160 62,115 80,88 C100,58 140,45 165,52" stroke="#E8A33D" stroke-width="2.5"/>
+              <!-- Inner arc -->
+              <path class="svg-animate" d="M165,52 C155,70 148,100 158,128 C168,155 188,168 205,162 C228,153 238,120 230,95 C222,72 207,60 200,55" stroke="#E8A33D" stroke-width="2"/>
+              <!-- Layer lines (hojaldre) -->
+              <path class="svg-animate" d="M105,95 C130,82 155,85 175,95" stroke="#F2C879" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <path class="svg-animate" d="M100,115 C128,100 158,102 180,115" stroke="#F2C879" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <path class="svg-animate" d="M98,138 C128,122 162,124 185,138" stroke="#F2C879" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <path class="svg-animate" d="M100,160 C130,148 162,150 185,162" stroke="#F2C879" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <!-- Glaze shine -->
+              <path class="svg-animate" d="M110,78 Q132,68 158,72" stroke="rgba(255,220,120,0.5)" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Factura de Manteca</h3>
+            <p class="product-subtitle">La favorita de la vidriera</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Manteca</li>
+              <li class="product-ingredient">Harina</li>
+              <li class="product-ingredient">Almíbar</li>
+            </ul>
+            <p class="product-desc">Hojaldrada, dulce justa, recién salida del horno cada mañana. La que más se pide para el mate.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 03: TORTA DE CUMPLEAÑOS ─── -->
+        <article class="product-card" aria-label="Torta de Cumpleaños">
+          <div class="product-card-header">
+            <span class="product-serie clasico">Clásico</span>
+            <span class="product-num">03 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Cake body fill -->
+              <rect class="svg-fill" x="52" y="98" width="176" height="108" rx="4" fill="#F7E7C6" fill-opacity="0.18" stroke="none"/>
+              <!-- Cake base -->
+              <path class="svg-animate" d="M52,98 L52,200 Q52,206 58,206 L222,206 Q228,206 228,200 L228,98" stroke="#C1502E" stroke-width="2.5"/>
+              <!-- Frosting top edge - wavy -->
+              <path class="svg-animate" d="M52,98 Q72,84 92,98 Q112,84 132,98 Q152,84 172,98 Q192,84 212,98 Q220,84 228,98" stroke="#C1502E" stroke-width="2.5"/>
+              <!-- Filling layer 1 -->
+              <line class="svg-animate" x1="52" y1="140" x2="228" y2="140" stroke="#E8A33D" stroke-width="1.8" stroke-dasharray="6 3"/>
+              <!-- Filling layer 2 -->
+              <line class="svg-animate" x1="52" y1="170" x2="228" y2="170" stroke="#E8A33D" stroke-width="1.8" stroke-dasharray="6 3"/>
+              <!-- Candles (3) -->
+              <rect class="svg-animate" x="105" y="54" width="8" height="38" rx="4" stroke="#C1502E" stroke-width="1.8"/>
+              <rect class="svg-animate" x="136" y="44" width="8" height="48" rx="4" stroke="#C1502E" stroke-width="1.8"/>
+              <rect class="svg-animate" x="167" y="54" width="8" height="38" rx="4" stroke="#C1502E" stroke-width="1.8"/>
+              <!-- Flames -->
+              <path class="svg-animate" d="M105,52 Q109,42 113,52 Q109,58 105,52Z" stroke="#E8A33D" stroke-width="1.5" fill="none"/>
+              <path class="svg-animate" d="M136,42 Q140,30 144,42 Q140,50 136,42Z" stroke="#E8A33D" stroke-width="1.5" fill="none"/>
+              <path class="svg-animate" d="M167,52 Q171,42 175,52 Q171,58 167,52Z" stroke="#E8A33D" stroke-width="1.5" fill="none"/>
+              <!-- Cream drips -->
+              <path class="svg-animate" d="M80,98 Q78,112 80,118 Q82,112 80,98" stroke="#F7E7C6" stroke-width="2"/>
+              <path class="svg-animate" d="M160,98 Q158,114 160,122 Q162,114 160,98" stroke="#F7E7C6" stroke-width="2"/>
+              <path class="svg-animate" d="M200,98 Q198,108 200,114 Q202,108 200,98" stroke="#F7E7C6" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Torta de Cumpleaños</h3>
+            <p class="product-subtitle">Para festejar en casa</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Bizcochuelo</li>
+              <li class="product-ingredient">Dulce de leche</li>
+              <li class="product-ingredient">Crema</li>
+            </ul>
+            <p class="product-desc">La de siempre, con dulce de leche bien generoso. Se encarga con un día de aviso.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 04: PAN DULCE ─── -->
+        <article class="product-card" aria-label="Pan Dulce">
+          <div class="product-card-header">
+            <span class="product-serie clasico">Clásico</span>
+            <span class="product-num">04 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Body fill -->
+              <path class="svg-fill" d="M80,195 L80,118 Q80,40 140,38 Q200,40 200,118 L200,195Z" fill="#B8835C" fill-opacity="0.18" stroke="none"/>
+              <!-- Main dome -->
+              <path class="svg-animate" d="M80,195 L80,118 Q80,40 140,38 Q200,40 200,118 L200,195" stroke="#E8A33D" stroke-width="2.5"/>
+              <!-- Base rectangle -->
+              <path class="svg-animate" d="M68,195 L68,180 Q68,174 74,174 L206,174 Q212,174 212,180 L212,195 Q212,201 206,201 L74,201 Q68,201 68,195Z" stroke="#B8835C" stroke-width="2"/>
+              <!-- Paper base -->
+              <path class="svg-animate" d="M65,180 L215,180" stroke="#B8835C" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <!-- Score lines on dome -->
+              <path class="svg-animate" d="M115,48 Q140,44 162,52" stroke="#E8A33D" stroke-width="1.8"/>
+              <!-- Fruit dots -->
+              <circle class="svg-animate" cx="112" cy="88" r="4.5" stroke="#C1502E" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="136" cy="68" r="3.5" stroke="#C1502E" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="158" cy="80" r="4" stroke="#E8A33D" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="122" cy="115" r="3.5" stroke="#5B6B45" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="152" cy="108" r="4" stroke="#C1502E" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="140" cy="135" r="3.5" stroke="#E8A33D" stroke-width="1.5"/>
+              <!-- Raisin/nut shapes -->
+              <ellipse class="svg-animate" cx="100" cy="135" rx="5" ry="3.5" stroke="#B8835C" stroke-width="1.5" transform="rotate(-20 100 135)"/>
+              <ellipse class="svg-animate" cx="165" cy="130" rx="5" ry="3.5" stroke="#B8835C" stroke-width="1.5" transform="rotate(15 165 130)"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Pan Dulce</h3>
+            <p class="product-subtitle">El de las fiestas</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Frutas confitadas</li>
+              <li class="product-ingredient">Pasas</li>
+              <li class="product-ingredient">Nueces</li>
+            </ul>
+            <p class="product-desc">Receta de familia, esponjoso y con la fruta justa. Se vende todo diciembre y se agota rápido.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 05: CHIPÁ ─── -->
+        <article class="product-card" aria-label="Chipá">
+          <div class="product-card-header">
+            <span class="product-serie temporada">Temporada</span>
+            <span class="product-num">05 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Chipá body fill - irregular circle/puff shape -->
+              <path class="svg-fill" d="M140,32 C165,28 192,42 208,62 C228,86 230,118 218,144 C204,172 178,188 148,190 C118,192 90,178 74,156 C56,132 54,98 68,74 C82,50 112,36 140,32Z" fill="#EAC15A" fill-opacity="0.2" stroke="none"/>
+              <!-- Outer bumpy outline -->
+              <path class="svg-animate" d="M140,32 C155,26 175,33 190,45 C205,57 218,72 222,90 C228,110 224,136 212,154 C198,172 178,186 156,190 C132,194 108,186 90,172 C70,156 58,132 60,108 C62,82 76,60 96,46 C112,34 128,36 140,32Z" stroke="#EAC15A" stroke-width="2.5"/>
+              <!-- Crack lines on top -->
+              <path class="svg-animate" d="M135,38 Q140,52 138,68" stroke="#5B6B45" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M152,42 Q156,56 150,70" stroke="#5B6B45" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- Bubble/air holes -->
+              <circle class="svg-animate" cx="100" cy="100" r="5" stroke="#EAC15A" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="118" cy="80" r="3.5" stroke="#EAC15A" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="155" cy="92" r="4.5" stroke="#EAC15A" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="170" cy="120" r="4" stroke="#EAC15A" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="108" cy="148" r="3.5" stroke="#EAC15A" stroke-width="1.5"/>
+              <circle class="svg-animate" cx="148" cy="155" r="5" stroke="#EAC15A" stroke-width="1.5"/>
+              <!-- Cheese pull texture -->
+              <path class="svg-animate" d="M128,60 Q134,55 142,62" stroke="#5B6B45" stroke-width="1.5" stroke-dasharray="3 2"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Chipá</h3>
+            <p class="product-subtitle">El antojo correntino</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Almidón de mandioca</li>
+              <li class="product-ingredient">Queso</li>
+              <li class="product-ingredient">Huevo</li>
+            </ul>
+            <p class="product-desc">Crocante afuera, elástico adentro. Se hornea por tandas chicas para que llegue siempre caliente.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 06: EMPANADA DE CARNE ─── -->
+        <article class="product-card" aria-label="Empanada de Carne">
+          <div class="product-card-header">
+            <span class="product-serie temporada">Temporada</span>
+            <span class="product-num">06 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Empanada body fill -->
+              <path class="svg-fill" d="M55,145 Q55,60 140,48 Q225,60 225,145 Q225,160 140,165 Q55,160 55,145Z" fill="#D99A4E" fill-opacity="0.2" stroke="none"/>
+              <!-- Main curved top -->
+              <path class="svg-animate" d="M55,145 Q55,60 140,48 Q225,60 225,145" stroke="#C1502E" stroke-width="2.5"/>
+              <!-- Bottom straight edge -->
+              <path class="svg-animate" d="M55,145 L225,145" stroke="#C1502E" stroke-width="2.2"/>
+              <!-- Repulgo marks - crimped edge along curve -->
+              <path class="svg-animate" d="M70,130 Q72,118 78,110" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M85,110 Q90,98 98,92" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M108,85 Q115,76 124,72" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M140,68 Q148,66 155,68" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M162,72 Q170,76 176,82" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M184,91 Q192,99 195,108" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <path class="svg-animate" d="M200,112 Q206,122 208,132" stroke="#D99A4E" stroke-width="2" stroke-linecap="round"/>
+              <!-- Surface sheen -->
+              <path class="svg-animate" d="M90,80 Q118,64 148,65 Q175,66 195,82" stroke="rgba(232,163,61,0.4)" stroke-width="3" stroke-linecap="round"/>
+              <!-- Score dot in center -->
+              <circle class="svg-animate" cx="140" cy="108" r="5" stroke="#C1502E" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Empanada de Carne</h3>
+            <p class="product-subtitle">Para el mediodía</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Carne a cuchillo</li>
+              <li class="product-ingredient">Cebolla</li>
+              <li class="product-ingredient">Huevo</li>
+            </ul>
+            <p class="product-desc">Repulgo a mano, jugo justo, horno fuerte. Se piden por docena para llevar a la oficina.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 07: ROGEL ─── -->
+        <article class="product-card" aria-label="Rogel">
+          <div class="product-card-header">
+            <span class="product-serie temporada">Temporada</span>
+            <span class="product-num">07 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Triangle slice fill -->
+              <polygon class="svg-fill" points="140,28 232,188 48,188" fill="#E8C98A" fill-opacity="0.18" stroke="none"/>
+              <!-- Main triangle outline -->
+              <polygon class="svg-animate" points="140,28 232,188 48,188" stroke="#E8A33D" stroke-width="2.5"/>
+              <!-- Layer lines (horizontal cuts through the triangle) -->
+              <line class="svg-animate" x1="100" y1="100" x2="182" y2="100" stroke="#E8A33D" stroke-width="1.8" stroke-dasharray="5 3"/>
+              <line class="svg-animate" x1="85"  y1="122" x2="196" y2="122" stroke="#E8A33D" stroke-width="1.8" stroke-dasharray="5 3"/>
+              <line class="svg-animate" x1="72"  y1="144" x2="210" y2="144" stroke="#E8A33D" stroke-width="1.8" stroke-dasharray="5 3"/>
+              <line class="svg-animate" x1="60"  y1="166" x2="222" y2="166" stroke="#E8A33D" stroke-width="1.8" stroke-dasharray="5 3"/>
+              <!-- Merengue top - wavy peaks -->
+              <path class="svg-animate" d="M126,28 Q133,14 140,20 Q147,14 154,28" stroke="#F7E7C6" stroke-width="2.2"/>
+              <path class="svg-animate" d="M115,38 Q122,22 130,30 Q137,22 142,35" stroke="#F7E7C6" stroke-width="1.8"/>
+              <!-- DDL fill texture between layers -->
+              <path class="svg-animate" d="M100,100 Q140,108 182,100" stroke="rgba(184,131,92,0.35)" stroke-width="4"/>
+              <path class="svg-animate" d="M85,122  Q140,132 196,122" stroke="rgba(184,131,92,0.35)" stroke-width="4"/>
+              <path class="svg-animate" d="M72,144  Q140,154 210,144" stroke="rgba(184,131,92,0.35)" stroke-width="4"/>
+              <!-- Side view crust marks -->
+              <path class="svg-animate" d="M48,188 Q50,196 55,200" stroke="#E8A33D" stroke-width="1.5" stroke-linecap="round"/>
+              <path class="svg-animate" d="M232,188 Q230,196 226,200" stroke="#E8A33D" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Rogel</h3>
+            <p class="product-subtitle">El postre de domingo</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Masa hojaldrada</li>
+              <li class="product-ingredient">Dulce de leche</li>
+              <li class="product-ingredient">Merengue</li>
+            </ul>
+            <p class="product-desc">Capas finitas y dulce de leche entre cada una. Se vende por porción o entero para la sobremesa.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 08: PAN DE SALVADO ─── -->
+        <article class="product-card" aria-label="Pan de Salvado">
+          <div class="product-card-header">
+            <span class="product-serie temporada">Temporada</span>
+            <span class="product-num">08 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Loaf fill -->
+              <path class="svg-fill" d="M55,175 L55,120 Q55,42 140,42 Q225,42 225,120 L225,175Z" fill="#9C6F44" fill-opacity="0.18" stroke="none"/>
+              <!-- Loaf main body -->
+              <path class="svg-animate" d="M55,175 L55,120 Q55,42 140,42 Q225,42 225,120 L225,175 Z" stroke="#5B6B45" stroke-width="2.5"/>
+              <!-- Base line -->
+              <line class="svg-animate" x1="48" y1="175" x2="232" y2="175" stroke="#5B6B45" stroke-width="2"/>
+              <!-- Score/cut down the middle -->
+              <path class="svg-animate" d="M140,50 Q142,46 140,42 Q138,46 140,50" stroke="#9C6F44" stroke-width="2" stroke-linecap="round"/>
+              <line class="svg-animate" x1="140" y1="50" x2="140" y2="175" stroke="#9C6F44" stroke-width="2" stroke-dasharray="5 4"/>
+              <!-- Seed pattern -->
+              <ellipse class="svg-animate" cx="100" cy="88"  rx="4" ry="2.2" stroke="#5B6B45" stroke-width="1.5" transform="rotate(-30 100 88)"/>
+              <ellipse class="svg-animate" cx="118" cy="72"  rx="4" ry="2.2" stroke="#5B6B45" stroke-width="1.5" transform="rotate(15 118 72)"/>
+              <ellipse class="svg-animate" cx="155" cy="78"  rx="4" ry="2.2" stroke="#5B6B45" stroke-width="1.5" transform="rotate(-20 155 78)"/>
+              <ellipse class="svg-animate" cx="178" cy="96"  rx="4" ry="2.2" stroke="#5B6B45" stroke-width="1.5" transform="rotate(40 178 96)"/>
+              <ellipse class="svg-animate" cx="90"  cy="118" rx="4" ry="2.2" stroke="#9C6F44" stroke-width="1.5" transform="rotate(10 90 118)"/>
+              <ellipse class="svg-animate" cx="110" cy="140" rx="4" ry="2.2" stroke="#9C6F44" stroke-width="1.5" transform="rotate(-35 110 140)"/>
+              <ellipse class="svg-animate" cx="162" cy="108" rx="4" ry="2.2" stroke="#5B6B45" stroke-width="1.5" transform="rotate(25 162 108)"/>
+              <ellipse class="svg-animate" cx="185" cy="135" rx="4" ry="2.2" stroke="#9C6F44" stroke-width="1.5" transform="rotate(-15 185 135)"/>
+              <!-- Bran texture dots -->
+              <circle class="svg-animate" cx="85"  cy="152" r="2.5" stroke="#5B6B45" stroke-width="1.2"/>
+              <circle class="svg-animate" cx="140" cy="100" r="2.5" stroke="#5B6B45" stroke-width="1.2"/>
+              <circle class="svg-animate" cx="195" cy="155" r="2.5" stroke="#5B6B45" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Pan de Salvado</h3>
+            <p class="product-subtitle">El de todos los días</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Harina integral</li>
+              <li class="product-ingredient">Salvado</li>
+              <li class="product-ingredient">Semillas</li>
+            </ul>
+            <p class="product-desc">Para la dieta de toda la semana, sin perder sabor. El que más piden los habitués del barrio.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 09: VIGILANTE ─── -->
+        <article class="product-card" aria-label="Vigilante">
+          <div class="product-card-header">
+            <span class="product-serie temporada">Temporada</span>
+            <span class="product-num">09 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Portion fill -->
+              <rect class="svg-fill" x="55" y="60" width="170" height="140" rx="4" fill="#B5482E" fill-opacity="0.15" stroke="none"/>
+              <!-- Outer shape with slight diagonal cut top-right -->
+              <path class="svg-animate" d="M55,60 L185,60 L225,90 L225,200 Q225,206 219,206 L61,206 Q55,206 55,200 Z" stroke="#C1502E" stroke-width="2.5"/>
+              <!-- Cut diagonal line -->
+              <path class="svg-animate" d="M185,60 L225,90" stroke="#C1502E" stroke-width="2"/>
+              <!-- Membrillo layer (top half) -->
+              <line class="svg-animate" x1="55" y1="128" x2="225" y2="128" stroke="#B5482E" stroke-width="1.8" stroke-dasharray="6 3"/>
+              <!-- Membrillo fill texture -->
+              <path class="svg-animate" d="M62,78 Q140,68 218,78 Q218,124 218,124 Q140,118 62,124 Z" stroke="#B5482E" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <!-- Queso layer (bottom half) - crosshatch -->
+              <path class="svg-animate" d="M65,145 L215,145" stroke="#E8C98A" stroke-width="1.2" stroke-dasharray="5 4"/>
+              <path class="svg-animate" d="M65,162 L215,162" stroke="#E8C98A" stroke-width="1.2" stroke-dasharray="5 4"/>
+              <path class="svg-animate" d="M65,180 L215,180" stroke="#E8C98A" stroke-width="1.2" stroke-dasharray="5 4"/>
+              <!-- Masa quebrada side texture -->
+              <path class="svg-animate" d="M55,60 Q50,80 55,200" stroke="#C1502E" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.5"/>
+              <!-- Crumb texture top -->
+              <circle class="svg-animate" cx="95"  cy="90" r="3" stroke="#B5482E" stroke-width="1.3"/>
+              <circle class="svg-animate" cx="140" cy="84" r="2.5" stroke="#B5482E" stroke-width="1.3"/>
+              <circle class="svg-animate" cx="185" cy="102" r="3" stroke="#B5482E" stroke-width="1.3"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Vigilante</h3>
+            <p class="product-subtitle">Membrillo y queso</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Masa quebrada</li>
+              <li class="product-ingredient">Dulce de membrillo</li>
+              <li class="product-ingredient">Queso</li>
+            </ul>
+            <p class="product-desc">El clásico de panadería argentina. Dulce y salado en el mismo bocado, tibio recién horneado.</p>
+          </div>
+        </article>
+
+        <!-- ─── CARD 10: BIZCOCHOS DE GRASA ─── -->
+        <article class="product-card" aria-label="Bizcochos de Grasa">
+          <div class="product-card-header">
+            <span class="product-serie temporada">Temporada</span>
+            <span class="product-num">10 / 10</span>
+          </div>
+          <div class="product-svg-wrap">
+            <svg class="product-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Bottom biscuit fill -->
+              <ellipse class="svg-fill" cx="140" cy="180" rx="88" ry="22" fill="#DDB877" fill-opacity="0.18" stroke="none"/>
+              <!-- Middle biscuit fill -->
+              <ellipse class="svg-fill" cx="140" cy="148" rx="84" ry="21" fill="#DDB877" fill-opacity="0.18" stroke="none"/>
+              <!-- Top biscuit fill -->
+              <ellipse class="svg-fill" cx="140" cy="116" rx="80" ry="20" fill="#DDB877" fill-opacity="0.18" stroke="none"/>
+
+              <!-- Bottom biscuit outline -->
+              <ellipse class="svg-animate" cx="140" cy="180" rx="88" ry="22" stroke="#E8A33D" stroke-width="2.2"/>
+              <!-- Bottom flake layers -->
+              <line class="svg-animate" x1="58" y1="172" x2="222" y2="172" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <line class="svg-animate" x1="60" y1="165" x2="220" y2="165" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <line class="svg-animate" x1="62" y1="158" x2="218" y2="158" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+              <!-- Middle biscuit outline -->
+              <ellipse class="svg-animate" cx="140" cy="148" rx="84" ry="21" stroke="#E8A33D" stroke-width="2.2"/>
+              <!-- Middle flake layers -->
+              <line class="svg-animate" x1="62"  y1="140" x2="218" y2="140" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <line class="svg-animate" x1="64"  y1="133" x2="216" y2="133" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+              <!-- Top biscuit outline -->
+              <ellipse class="svg-animate" cx="140" cy="116" rx="80" ry="20" stroke="#E8A33D" stroke-width="2.2"/>
+              <!-- Top flake layers -->
+              <line class="svg-animate" x1="66"  y1="110" x2="214" y2="110" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <line class="svg-animate" x1="68"  y1="103" x2="212" y2="103" stroke="#DDB877" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <!-- Top surface highlight -->
+              <path class="svg-animate" d="M95,102 Q118,94 148,95 Q172,96 184,104" stroke="rgba(255,220,120,0.4)" stroke-width="3" stroke-linecap="round"/>
+
+              <!-- Salt grain dots on top -->
+              <circle class="svg-animate" cx="115" cy="108" r="2.5" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+              <circle class="svg-animate" cx="140" cy="104" r="2"   stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+              <circle class="svg-animate" cx="163" cy="108" r="2.5" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-name">Bizcochos de Grasa</h3>
+            <p class="product-subtitle">Los de la abuela</p>
+            <ul class="product-ingredients">
+              <li class="product-ingredient">Grasa vacuna</li>
+              <li class="product-ingredient">Harina</li>
+              <li class="product-ingredient">Sal gruesa</li>
+            </ul>
+            <p class="product-desc">Crocantes, hojaldrados y con el toque de sal justo. Se venden por bolsa, no duran ni un día en casa.</p>
+          </div>
+        </article>
+
+      </div><!-- /products-track -->
+    </div><!-- /products-track-wrap -->
+
+    <!-- Marquee secundario de ingredientes -->
+    <div class="products-marquee-bottom marquee-wrap" aria-hidden="true">
+      <div class="marquee-track reverse">
+        <span class="marquee-item">Masa madre</span>
+        <span class="marquee-item">Harina de trigo</span>
+        <span class="marquee-item">Manteca de calidad</span>
+        <span class="marquee-item">Sal de mar</span>
+        <span class="marquee-item">Dulce de leche</span>
+        <span class="marquee-item">Horno a leña</span>
+        <span class="marquee-item">Recetas de siempre</span>
+        <span class="marquee-item">Almidón de mandioca</span>
+        <span class="marquee-item">Carne a cuchillo</span>
+        <span class="marquee-item">Grasa vacuna</span>
+        <span class="marquee-item">Masa madre</span>
+        <span class="marquee-item">Harina de trigo</span>
+        <span class="marquee-item">Manteca de calidad</span>
+        <span class="marquee-item">Sal de mar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────
+       SECCIÓN 03 — PEDIDOS ESPECIALES
+       ─────────────────────────────────────────────────── -->
+  <section id="pedidos-especiales" class="section" aria-labelledby="pedidos-title">
+    <span class="section-num" aria-hidden="true">03</span>
+
+    <div class="section-label">
+      <span>Cuándo horneamos qué</span>
+    </div>
+    <h2 id="pedidos-title" class="about-title reveal" style="max-width:700px; margin-bottom:8px;">
+      Producción de la semana
+    </h2>
+    <p class="about-lead reveal" data-delay="0.1" style="max-width:540px; margin-bottom:0;">
+      Cada día hay algo diferente saliendo del horno. Organizate con esta guía.
+    </p>
+
+    <div class="calendar-grid">
+
+      <!-- Lunes a miércoles -->
+      <div class="calendar-card reveal" style="border-left-color:#C1502E;">
+        <div class="calendar-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Horno icon -->
+            <rect x="4" y="14" width="32" height="22" rx="3" stroke="#C1502E" stroke-width="2"/>
+            <path d="M4 20h32" stroke="#C1502E" stroke-width="1.5"/>
+            <rect x="10" y="24" width="8" height="6" rx="1" stroke="#C1502E" stroke-width="1.5"/>
+            <rect x="22" y="24" width="8" height="6" rx="1" stroke="#C1502E" stroke-width="1.5"/>
+            <path d="M14 14V8Q14 4 17 4 M20 14V6 M26 14V8Q26 4 23 4" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="calendar-days">Lunes a miércoles</div>
+        <div class="calendar-product">Pan y facturas del día</div>
+        <div class="calendar-detail">"Lo de siempre, fresco cada mañana."</div>
+      </div>
+
+      <!-- Jueves y viernes -->
+      <div class="calendar-card reveal" data-delay="0.1" style="border-left-color:#E8A33D;">
+        <div class="calendar-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Torta icon -->
+            <rect x="6" y="18" width="28" height="18" rx="3" stroke="#E8A33D" stroke-width="2"/>
+            <path d="M6 26h28" stroke="#E8A33D" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <path d="M8 18 Q10 10 14 8 Q20 6 26 8 Q30 10 32 18" stroke="#E8A33D" stroke-width="1.5"/>
+            <line x1="20" y1="8" x2="20" y2="2" stroke="#C1502E" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="2" r="2" stroke="#C1502E" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="calendar-days">Jueves y viernes</div>
+        <div class="calendar-product">Tortas por encargo</div>
+        <div class="calendar-detail">"Avisá con un día y la retirás lista."</div>
+      </div>
+
+      <!-- Sábado -->
+      <div class="calendar-card reveal" data-delay="0.2" style="border-left-color:#5B6B45;">
+        <div class="calendar-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Empanada icon -->
+            <path d="M8 28 Q8 10 20 8 Q32 10 32 28" stroke="#5B6B45" stroke-width="2"/>
+            <line x1="8" y1="28" x2="32" y2="28" stroke="#5B6B45" stroke-width="2"/>
+            <!-- Repulgo marks -->
+            <path d="M12 22 Q13 18 15 16" stroke="#5B6B45" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M18 13 Q20 12 22 13" stroke="#5B6B45" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M26 16 Q28 18 28 22" stroke="#5B6B45" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="calendar-days">Sábado</div>
+        <div class="calendar-product">Empanadas por docena</div>
+        <div class="calendar-detail">"Para la mesa del fin de semana."</div>
+      </div>
+
+      <!-- Domingo -->
+      <div class="calendar-card reveal" data-delay="0.3" style="border-left-color:#C1502E;">
+        <div class="calendar-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Trigo / wheat icon -->
+            <line x1="20" y1="36" x2="20" y2="8" stroke="#C1502E" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 20 L12 14 Q8 10 14 8 Q20 6 20 12" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 20 L28 14 Q32 10 26 8 Q20 6 20 12" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 28 L14 23 Q10 19 16 17" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 28 L26 23 Q30 19 24 17" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="calendar-days">Domingo</div>
+        <div class="calendar-product">Pan dulce y facturas especiales</div>
+        <div class="calendar-detail">"Horario reducido, producción limitada."</div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:clamp(24px,4vw,40px); text-align:center;">
+      <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20encargo%20especial%20en%20J%20%26%20F%20%F0%9F%A5%90"
+         target="_blank" rel="noopener" class="cta-primary" style="display:inline-flex;"
+         aria-label="Consultar encargo por WhatsApp">
+        Consultar encargo
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────
+       SECCIÓN 04 — GALERÍA
+       ─────────────────────────────────────────────────── -->
+  <section id="galeria" aria-labelledby="galeria-title">
+    <div class="galeria-header">
+      <div class="section-label" style="color:rgba(250,243,231,0.4);">
+        <span>El local</span>
+      </div>
+      <h2 id="galeria-title" class="galeria-title reveal">
+        Esto es lo que<br><em>encontrás cada día.</em>
+      </h2>
+    </div>
+
+    <div class="gallery-lanes" aria-label="Galería de imágenes de J & F Panadería">
+      <!-- Lane 1: rápido -->
+      <div class="gallery-lane">
+        <div class="gallery-lane-track">
+          <div class="gallery-item"><img src="assets/img/gallery-01.jpg" alt="Panes artesanales sobre mesada de madera" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:25;display:none">Pan artesanal</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-04.jpg" alt="Facturas y medialunas en vidriera" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:35;display:none">Facturas</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-07.jpg" alt="Harina en superficie oscura" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:15;display:none">Harina</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-12.jpg" alt="Corteza de pan artesanal" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:30;display:none">Corteza pan</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-13.jpg" alt="Medialunas de manteca" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:40;display:none">Medialunas</div></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="gallery-item"><img src="assets/img/gallery-01.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:25;display:none">Pan</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-04.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:35;display:none">Facturas</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-07.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:15;display:none">Harina</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-12.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:30;display:none">Corteza</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-13.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:40;display:none">Medialunas</div></div>
+        </div>
+      </div>
+      <!-- Lane 2: lento + reverso -->
+      <div class="gallery-lane">
+        <div class="gallery-lane-track">
+          <div class="gallery-item"><img src="assets/img/gallery-02.jpg" alt="Manos de panadero amasando" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:20;display:none">Amasado</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-05.jpg" alt="Granos de trigo en macro" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:45;display:none">Trigo</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-08.jpg" alt="Pan fresco en rejilla" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:28;display:none">Pan fresco</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-14.jpg" alt="Panadero con delantal" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:18;display:none">Panadero</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-15.jpg" alt="Masa madre fermentando" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:32;display:none">Masa madre</div></div>
+          <!-- Duplicate -->
+          <div class="gallery-item"><img src="assets/img/gallery-02.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:20;display:none">Amasado</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-05.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:45;display:none">Trigo</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-08.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:28;display:none">Pan</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-14.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:18;display:none">Panadero</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-15.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:32;display:none">Masa</div></div>
+        </div>
+      </div>
+      <!-- Lane 3: reverso -->
+      <div class="gallery-lane" style="--dir:-1">
+        <div class="gallery-lane-track" style="animation-direction:reverse; animation-duration:32s;">
+          <div class="gallery-item"><img src="assets/img/gallery-03.jpg" alt="Horno a leña con llamas" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:10;display:none">Horno</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-06.jpg" alt="Vidriera de panadería" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:38;display:none">Vidriera</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-09.jpg" alt="Torta de cumpleaños con velas" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:22;display:none">Torta</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-11.jpg" alt="Empanadas en bandeja de horno" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:26;display:none">Empanadas</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-16.jpg" alt="Interior de panadería" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:42;display:none">Interior</div></div>
+          <!-- Duplicate -->
+          <div class="gallery-item"><img src="assets/img/gallery-03.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:10;display:none">Horno</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-06.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:38;display:none">Vidriera</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-09.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:22;display:none">Torta</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-11.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:26;display:none">Empanadas</div></div>
+          <div class="gallery-item"><img src="assets/img/gallery-16.jpg" alt="" loading="lazy" aria-hidden="true" onerror="this.style.display='none';this.parentElement.querySelector('.gallery-item-ph').style.display='flex'"><div class="gallery-item-ph" style="--h:42;display:none">Interior</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────
+       SECCIÓN 05 — PEDIDOS GRANDES
+       ─────────────────────────────────────────────────── -->
+  <section id="pedidos-grandes" class="section" aria-labelledby="grandes-title">
+    <span class="section-num" aria-hidden="true">05</span>
+
+    <div class="big-orders-wrap">
+      <!-- Card con efecto tilt -->
+      <div class="big-orders-card" aria-hidden="true">
+        <div class="big-orders-card-bg">
+          <img src="assets/img/events-bg.jpg" alt=""
+               style="width:100%;height:100%;object-fit:cover;opacity:0.55;"
+               loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="big-orders-card-veil"></div>
+        <div class="big-orders-card-content">
+          <div class="big-orders-card-tag">Eventos &amp; Celebraciones</div>
+          <div class="big-orders-card-title">
+            Mesas dulces, bandejas surtidas<br>
+            y tortas para cualquier número.
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="big-orders-text">
+        <div class="section-label">
+          <span>Pedidos Grandes</span>
+        </div>
+        <h2 id="grandes-title" class="big-orders-title reveal">
+          Para tu evento,<br>
+          <em>amasamos distinto.</em>
+        </h2>
+        <p class="big-orders-body reveal" data-delay="0.1">
+          Cumpleaños, comuniones, reuniones de empresa, fiestas de barrio.
+          Si lo necesitás en cantidad, lo organizamos con tiempo.
+        </p>
+        <ul class="big-orders-list">
+          <li class="reveal" data-delay="0.15">Tortas de cumpleaños de cualquier tamaño</li>
+          <li class="reveal" data-delay="0.2">Mesas dulces para eventos y fiestas</li>
+          <li class="reveal" data-delay="0.25">Bandejas surtidas de facturas y medialunas</li>
+          <li class="reveal" data-delay="0.3">Empanadas por docena para oficinas y eventos</li>
+          <li class="reveal" data-delay="0.35">Encargos de comuniones y casamientos</li>
+        </ul>
+        <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hablar%20de%20un%20pedido%20grande%20para%20un%20evento%20%F0%9F%8E%82"
+           target="_blank" rel="noopener" class="cta-primary reveal" data-delay="0.4"
+           aria-label="Consultar pedido grande por WhatsApp">
+          Hablamos por WhatsApp
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────────────────────────────
+       SECCIÓN 06 — HACÉ TU PEDIDO
+       ─────────────────────────────────────────────────── -->
+  <section id="pedido" class="section" aria-labelledby="pedido-title">
+    <div class="pedido-grid">
+
+      <div>
+        <div class="section-label" style="color:rgba(250,243,231,0.4);">
+          <span>Pedido directo</span>
+        </div>
+        <h2 id="pedido-title" class="pedido-title reveal">
+          Hacé tu<br>
+          <em>pedido.</em>
+        </h2>
+
+        <form id="pedido-form" class="pedido-form" novalidate>
+          <div class="form-field">
+            <label class="form-label" for="f-nombre">
+              <span class="form-label-num">01</span> Nombre
+            </label>
+            <input class="form-input" type="text" id="f-nombre" name="nombre"
+                   placeholder="¿Cómo te llamás?" autocomplete="given-name" required>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="f-telefono">
+              <span class="form-label-num">02</span> Teléfono
+            </label>
+            <input class="form-input" type="tel" id="f-telefono" name="telefono"
+                   placeholder="+54 9 261 ..." autocomplete="tel">
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="f-producto">
+                <span class="form-label-num">03</span> Producto
+              </label>
+              <select class="form-input form-select" id="f-producto" name="producto">
+                <option value="">¿Qué querés?</option>
+                <optgroup label="Clásicos de Siempre">
+                  <option>Pan Casero</option>
+                  <option>Factura de Manteca</option>
+                  <option>Torta de Cumpleaños</option>
+                  <option>Pan Dulce</option>
+                </optgroup>
+                <optgroup label="De Temporada">
+                  <option>Chipá</option>
+                  <option>Empanadas (por docena)</option>
+                  <option>Rogel (porción o entero)</option>
+                  <option>Pan de Salvado</option>
+                  <option>Vigilante</option>
+                  <option>Bizcochos de Grasa</option>
+                </optgroup>
+                <option value="Pedido especial / evento">Pedido especial / evento</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="f-cantidad">
+                <span class="form-label-num">&nbsp;</span> Cantidad
+              </label>
+              <input class="form-input" type="text" id="f-cantidad" name="cantidad"
+                     placeholder="ej: 1 kilo, 12 unidades…">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="f-nota">
+              <span class="form-label-num">04</span> Nota <small style="opacity:.5;font-family:var(--font-body);letter-spacing:0;text-transform:none;">(opcional)</small>
+            </label>
+            <textarea class="form-textarea" id="f-nota" name="nota"
+                      placeholder="Dedicatoria, alergias, día de retiro..."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-submit" aria-label="Enviar pedido por WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L.057 23.998l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.358-.213-3.742.981 1-3.645-.233-.373A9.818 9.818 0 1112 21.818z"/>
+              </svg>
+              Enviar pedido por WhatsApp
+            </button>
+            <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20J%20%26%20F%20%F0%9F%A5%90"
+               target="_blank" rel="noopener" class="form-alt-link"
+               aria-label="Ir directo a WhatsApp">
+              …o más rápido, directo a WhatsApp →
+            </a>
+          </div>
+        </form>
+      </div>
+
+      <!-- Panel de info lateral -->
+      <div class="pedido-info">
+        <div class="pedido-info-title">Dónde y cuándo</div>
+
+        <div class="info-item">
+          <div class="info-item-label">Teléfono / WhatsApp</div>
+          <div class="info-item-value">
+            <a href="tel:+5492613442368">+54 9 261 344-2368</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-item-label">Instagram</div>
+          <div class="info-item-value">
+            <a href="https://www.instagram.com/Caseritos.mza" target="_blank" rel="noopener">@Caseritos.mza</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-item-label">Dirección</div>
+          <div class="info-item-value">
+            Calle Las Heras 742<br>
+            Mendoza Capital<br>
+            <small style="opacity:.6; font-size:.8rem;">cerca de Plaza Independencia</small>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-item-label">Horario semana</div>
+          <div class="info-item-value">Lunes a Sábado · 07:00 → 21:00</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-item-label">Horario domingos</div>
+          <div class="info-item-value">08:00 → 13:00</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main><!-- /main -->
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-marquee-title" aria-hidden="true">J &amp; F · J &amp; F · J &amp; F · J &amp; F · J &amp; F ·</div>
+
+  <div class="footer-grid">
+
+    <!-- Cómo llegar -->
+    <div>
+      <div class="footer-col-title">Cómo llegar</div>
+      <address class="footer-address" style="font-style:normal;">
+        <strong>J &amp; F Panadería Artesanal</strong>
+        Calle Las Heras 742<br>
+        Mendoza Capital, Argentina<br>
+        <br>
+        <span style="font-size:.82rem;opacity:.55;">
+          Cerca de Plaza Independencia.<br>
+          A metros del centro de Mendoza.
+        </span>
+      </address>
+      <div class="footer-map" style="margin-top:20px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.1!2d-68.8444!3d-32.8895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLas+Heras+742%2C+Mendoza!5e0!3m2!1ses!2sar!4v1"
+          title="Ubicación de J & F Panadería en Las Heras 742, Mendoza"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <div>
+      <div class="footer-col-title">Contacto</div>
+      <a href="tel:+5492613442368" class="footer-contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.21h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.14a16 16 0 006 6l.34-.34a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        +54 9 261 344-2368
+      </a>
+      <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20J%20%26%20F%20%F0%9F%A5%90"
+         target="_blank" rel="noopener" class="footer-contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:#25D366;">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L.057 23.998l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.37l-.358-.213-3.742.981 1-3.645-.233-.373A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        WhatsApp directo
+      </a>
+      <a href="https://www.instagram.com/Caseritos.mza" target="_blank" rel="noopener" class="footer-contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+        @Caseritos.mza
+      </a>
+    </div>
+
+    <!-- Horarios -->
+    <div>
+      <div class="footer-col-title">Horarios</div>
+      <div class="info-item" style="border-color:rgba(250,243,231,0.06);">
+        <div class="info-item-label" style="color:rgba(250,243,231,0.3);">Lunes a sábado</div>
+        <div class="info-item-value" style="color:rgba(250,243,231,0.7);">07:00 → 21:00</div>
+      </div>
+      <div class="info-item" style="border-color:rgba(250,243,231,0.06);">
+        <div class="info-item-label" style="color:rgba(250,243,231,0.3);">Domingos</div>
+        <div class="info-item-value" style="color:rgba(250,243,231,0.7);">08:00 → 13:00</div>
+      </div>
+      <div class="info-item" style="border-bottom:none;">
+        <div class="info-item-label" style="color:rgba(250,243,231,0.3);">Encargos</div>
+        <div class="info-item-value" style="color:rgba(250,243,231,0.7); font-size:.85rem;">
+          Tortas y pedidos especiales<br>
+          con 1 día de aviso mínimo.
+        </div>
+      </div>
+
+      <div style="margin-top:28px;">
+        <a href="https://wa.me/5492613442368?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20J%20%26%20F%20%F0%9F%A5%90"
+           target="_blank" rel="noopener" class="cta-primary" style="display:inline-flex; margin-top:4px;"
+           aria-label="Hacer pedido por WhatsApp">
+          Pedir ahora
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /footer-grid -->
+
+  <div class="footer-bottom">
+    <span class="footer-legal">
+      © 2026 J &amp; F Panadería Artesanal · Mendoza, Argentina ·
+      <a href="assets/credits.json" style="color:inherit; text-decoration:underline; text-underline-offset:2px;" aria-label="Ver créditos de imágenes">Créditos de imágenes</a>
+    </span>
+    <a href="#hero" class="footer-back" aria-label="Volver al inicio">
+      ↑ Volver arriba
+    </a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCRIPTS
+     Sin type="module". IIFE únicamente.
+     ═══════════════════════════════════════════════════════ -->
+<script src="lib/gsap.min.js?v=20260626"            defer></script>
+<script src="lib/ScrollTrigger.min.js?v=20260626"   defer></script>
+<script src="lib/datos.js?v=20260626"               defer></script>
+<script src="main.js?v=20260626"                    defer></script>
+
+</body>
+</html>
