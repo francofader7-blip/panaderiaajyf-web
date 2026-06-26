@@ -8,7 +8,7 @@ window.__JYF__ = {
 
   brand: {
     nombre:     'J & F',
-    eslogan:    'la masa de toda la vida.',
+    eslogan:    'la verdadera masa de toda la vida.',
     direccion:  'Calle Las Heras 742, Mendoza Capital',
     referencia: 'cerca de Plaza Independencia',
     telefono:   '+54 9 261 344-2368',
